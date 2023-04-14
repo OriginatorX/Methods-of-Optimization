@@ -46,7 +46,7 @@ struct FuncParams {
 
 void optimize(const std::vector<optimFunTy>& functions, const FuncParams& params);
 Point min(const Point& first, const Point& second);
-void printPoint(const Computation& result, const double time, const int32_t precision = 16);
+void printPoint(const Computation& result, const double executionTime, const int32_t precision = 16);
 double length(const pair& interval);
 double midOfInterval(const pair& interval);
 double fibItem(size_t N);

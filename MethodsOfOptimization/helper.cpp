@@ -49,17 +49,17 @@ Point min(const Point& first, const Point& second) {
     return first.value < second.value ? first : second;
 }
 
-void printPoint(const Computation& result, const double time, const int32_t precision) {
+void printPoint(const Computation& result, const double executionTime, const int32_t precision) {
     std::cout.precision(16);
     int counter{1};
     for (auto& point : result.mediatePoints) {
         std::cout << counter << " Point: " << point.point <<  " : " << "Value: " << point.value << "\n";
         counter++;
     }
-    std::cout << "Точка интервала: "            << result.point.point   << "\n"
-        << "Значение функции в данной точке: "  << result.point.value   << "\n"
-        << "Количество итераций: "              << result.iterQuantity  << "\n"
-        << "Время выполнения: "                 << time                 << "\n"
+    std::cout << "Point of interval: "          << result.point.point   << "\n"
+        << "Value of function in this point: "  << result.point.value   << "\n"
+        << "Quantity of iterations: "           << result.iterQuantity  << "\n"
+        << "Time of execution: "                << executionTime        << "\n"
         << "\n" << std::endl;
 }
 
