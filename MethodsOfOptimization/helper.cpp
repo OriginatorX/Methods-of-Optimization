@@ -53,13 +53,16 @@ void printPoint(const Computation& result, const double executionTime, const int
     std::cout.precision(16);
     int counter{1};
     for (auto& point : result.mediatePoints) {
-        std::cout << counter << " Point: " << point.point <<  " : " << "Value: " << point.value << "\n";
+        std::cout 
+            << counter 
+            << " Point: " << point.point <<  " : " 
+            << "Value: " << point.value << "\n";
         counter++;
     }
-    std::cout << "Point of interval: "          << result.point.point   << "\n"
-        << "Value of function in this point: "  << result.point.value   << "\n"
-        << "Quantity of iterations: "           << result.iterQuantity  << "\n"
-        << "Time of execution: "                << executionTime        << "\n"
+    std::cout << "Point of interval: "  << result.point.point   << "\n"
+        << "Value of function: "        << result.point.value   << "\n"
+        << "Quantity of iterations: "   << result.iterQuantity  << "\n"
+        << "Time of execution: "        << executionTime        << "\n"
         << "\n" << std::endl;
 }
 
