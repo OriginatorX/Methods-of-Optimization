@@ -10,7 +10,6 @@
 int main(int, char** const) {
 	
 	setlocale(LC_ALL, "RUS");
-	const double PI{ 3.14159265 };
 
 	FuncParams params{ { -10 , 3}, pow(10, -12),
 		[] (double x) {

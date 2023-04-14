@@ -52,14 +52,14 @@ Point min(const Point& first, const Point& second) {
 void printPoint(const Computation& result, const double time, const int32_t precision) {
     std::cout.precision(16);
     int counter{1};
-    /*for (auto& point : result.mediatePoints) {
+    for (auto& point : result.mediatePoints) {
         std::cout << counter << " Point: " << point.point <<  " : " << "Value: " << point.value << "\n";
         counter++;
-    }*/
-    std::cout << "Òî÷êà èíòåðâàëà: "                << result.point.point   << "\n"
-        << "Çíà÷åíèå ôóíêöèè â äàííîé òî÷êå: "      << result.point.value   << "\n"
-        << "Êîëè÷åñòâî èòåðàöèé: "                  << result.iterQuantity  << "\n"
-        << "Âðåìÿ âûïîëíåíèÿ: "                     << time                 << "\n"
+    }
+    std::cout << "Ð¢Ð¾Ñ‡ÐºÐ° Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð°: "            << result.point.point   << "\n"
+        << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð² Ð´Ð°Ð½Ð½Ð¾Ð¹ Ñ‚Ð¾Ñ‡ÐºÐµ: "  << result.point.value   << "\n"
+        << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸Ð¹: "              << result.iterQuantity  << "\n"
+        << "Ð’Ñ€ÐµÐ¼Ñ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ: "                 << time                 << "\n"
         << "\n" << std::endl;
 }
 
