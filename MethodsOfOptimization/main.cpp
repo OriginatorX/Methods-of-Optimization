@@ -8,10 +8,8 @@
 #include "optimizationMethods.h"
 
 int main(int, char** const) {
-	
-	setlocale(LC_ALL, "RUS");
 
-	FuncParams params{ { -10 , 3}, pow(10, -12),
+	FuncParams params{ { -10 , 3}, pow(10, -3),
 		[] (double x) {
 			return pow(x, 2) - (4 * x) + 2;
 		}
